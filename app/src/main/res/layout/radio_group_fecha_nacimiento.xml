@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tableLayoutNombre">
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha_nacimiento_title_text"
+            android:textAlignment="viewEnd"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="4"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textViewFechaNacimiento"
+            android:layout_gravity="left|top"
+            android:textSize="16dp"
+            android:layout_span="1"
+            android:layout_column="2" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonFechaNacimiento"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="50dp"
+            android:layout_span="1"
+            android:src="@drawable/lesionado_edit_image"
+            android:layout_column="3"
+            android:contentDescription="@string/fecha_evento_description" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age_text"
+            android:textAlignment="viewEnd"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:id="@+id/editTextYears"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="text"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/year_birthday_text"
+            android:textAlignment="viewEnd"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:id="@+id/editTextMonths"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="text"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_birthday_text"
+            android:textAlignment="viewEnd"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:id="@+id/editTextDays"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="text"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_birthday_text"
+            android:textAlignment="viewEnd"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+    </TableRow>
+
+    </TableLayout>

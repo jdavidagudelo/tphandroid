@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/tableLayoutRespuestaOcular">
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/pupilas_title_text"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/pupilas_mioticas_text"
+                android:id="@+id/radioButtonPupilasMioticas"
+                android:background="@drawable/borders"
+                android:checked="false"/>
+
+            <CheckBox
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/pupilas_midriaticas_text"
+                android:id="@+id/radioButtonPupilasMidriaticas"
+                android:background="@drawable/borders"
+                android:checked="false"/>
+
+            <CheckBox
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/pupilas_anisocoricas_text"
+                android:id="@+id/radioButtonPupilasAnisocoricas"
+                android:background="@drawable/borders"
+                android:checked="false"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/pupilas_isocoricas_text"
+                android:id="@+id/radioButtonPupilasIsocoricas"
+                android:background="@drawable/borders"
+                android:checked="false"/>
+
+            <CheckBox
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/pupilas_reactivas_text"
+                android:id="@+id/radioButtonPupilasReactivas"
+                android:background="@drawable/borders"
+                android:checked="false"/>
+
+            <CheckBox
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/pupilas_no_reactivas_text"
+                android:id="@+id/radioButtonPupilasNoReactivas"
+                android:background="@drawable/borders"
+                android:checked="false"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/pupilas_no_evaluables_text"
+                android:id="@+id/radioButtonPupilasNoEvaluables"
+                android:background="@drawable/borders"
+                android:checked="false"/>
+
+            <CheckBox
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/pupilas_protesis_izquierda_text"
+                android:id="@+id/radioButtonPupilasProtesisIzquierda"
+                android:background="@drawable/borders"
+                android:checked="false"/>
+
+            <CheckBox
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/pupilas_protesis_derecha_text"
+                android:id="@+id/radioButtonPupilasProtesisDerecha"
+                android:background="@drawable/borders"
+                android:checked="false"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

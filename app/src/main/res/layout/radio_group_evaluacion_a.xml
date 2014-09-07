@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/tableLayoutEvaluacionA">
+
+        <TableRow>
+            <RadioButton
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/permeable_text"
+                android:id="@+id/radioButtonViaAereaPermeable"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        </TableRow>
+        <TableRow>
+
+            <RadioButton
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/obstruida_text"
+                android:id="@+id/radioButtonViaAereaObstruida"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+            <Space android:layout_width="30dp"/>
+            <TextView android:text="@string/causa_obstruccion_text"
+                android:id="@+id/textViewCausaObstruccion"
+                android:textSize="20dp"
+                />
+            <Space android:layout_width="5dp"/>
+            <EditText
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="@dimen/edit_text_height"
+                android:id="@+id/editTextCausaObstruccionViaAerea"
+                android:background="@drawable/borders_edit_textbox"
+                android:inputType="textMultiLine"/>
+        </TableRow>
+        </TableLayout>
+</RelativeLayout>

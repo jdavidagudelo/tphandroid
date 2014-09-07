@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/widget_margin" >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonAddEvolucion"
+        android:src="@drawable/add_evaluacion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/add_evolucion_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/evolucion_text"
+        android:id="@+id/textViewTriage"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewEvoluciones"
+        android:layout_below="@+id/imageButtonAddEvolucion"
+        android:layout_alignRight="@+id/imageButtonAddEvolucion"
+        android:layout_alignEnd="@+id/imageButtonAddEvolucion"
+        android:choiceMode="singleChoice"
+        android:animationCache="false"
+        android:smoothScrollbar="true"
+        android:scrollingCache="false"/>
+</RelativeLayout>

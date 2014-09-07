@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/tableLayoutRespuestaMotora">
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/glasgow_title_text"
+                />
+        </TableRow>
+        <TableRow>
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/glasgow_ocular_text"/>
+            <EditText
+                android:layout_width="@dimen/edit_text_glasgow_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextGlasgowOcular"
+                android:inputType="number"
+                android:background="@drawable/borders_edit_textbox"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/glasgow_verbal_text"/>
+            <EditText
+                android:layout_width="@dimen/edit_text_glasgow_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextGlasgowVerbal"
+                android:inputType="number"
+                android:background="@drawable/borders_edit_textbox"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/glasgow_motora_text"/>
+            <EditText
+                android:layout_width="@dimen/edit_text_glasgow_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextGlasgowMotora"
+                android:inputType="number"
+                android:background="@drawable/borders_edit_textbox"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/glasgow_total_text"/>
+            <EditText
+                android:layout_width="@dimen/edit_text_glasgow_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextGlasgowTotal"
+                android:inputType="number"
+                android:background="@drawable/borders_edit_textbox"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

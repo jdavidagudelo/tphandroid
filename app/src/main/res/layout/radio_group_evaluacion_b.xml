@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_evaluacion_b_ausente"
+                android:id="@+id/includeEvaluacionBAusente"/>
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_evaluacion_b_profundidad"
+                android:id="@+id/includeEvaluacionBProfundidad" />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_evaluacion_b_cianosis"
+                android:id="@+id/includeEvaluacionBRitmo"/>
+        </TableRow>
+        </TableLayout>
+</RelativeLayout>

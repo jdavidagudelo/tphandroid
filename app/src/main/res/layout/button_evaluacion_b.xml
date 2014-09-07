@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:layout_weight="0.73"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonEmergenciaMedica"
+            android:background="@drawable/evaluacion_a"
+            android:src="@drawable/emergencia_medica" />
+
+        <Space
+            android:layout_weight="0.1"
+
+            android:layout_width="153dp"
+            android:layout_height="10dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonTrauma"
+            android:background="@drawable/evaluacion_b"
+            android:src="@drawable/trauma" />
+
+        <Space
+
+            android:layout_width="153dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonEvaluacionA"
+            android:background="@drawable/evaluacion_a_selected"
+            android:src="@drawable/evaluacion_a" />
+
+        <Space
+
+            android:layout_width="153dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonEvaluacionB"
+            android:background="@drawable/evaluacion_a"
+            android:src="@drawable/evaluacion_b_selected" />
+
+        <Space
+
+            android:layout_width="153dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.7"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonEvaluacionC"
+            android:background="@drawable/evaluacion_a"
+            android:src="@drawable/evaluacion_c" />
+
+        <Space
+
+            android:layout_width="153dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonEvaluacionD"
+            android:background="@drawable/evaluacion_a"
+            android:src="@drawable/evaluacion_d" />
+
+        <Space
+
+            android:layout_width="153dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonEvaluacionE"
+            android:background="@drawable/evaluacion_a"
+            android:src="@drawable/evaluacion_e" />
+
+        <Space
+
+            android:layout_width="153dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonProcedimientos"
+            android:background="@drawable/evaluacion_a"
+            android:src="@drawable/procedimientos" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.artica.telesalud.tph.android" >
+
+    <permission
+        android:name="com.artica.telesalud.tph.android.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.artica.telesalud.tph.android.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBxLYZ7aDPqg_g7fL8h-G72JwCYOe9P4dk" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name=".service.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.ListEventsActivity"
+            android:label="@string/title_activity_list_events" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.EventActivity"
+            android:label="@string/title_activity_event" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.artica.telesalud.tph.android.activity.ListEventsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.MapsActivity"
+            android:label="@string/title_activity_maps" >
+        </activity>
+        <activity
+            android:name=".activity.ListPatientsActivity"
+            android:label="@string/title_activity_list_patients" >
+        </activity>
+        <activity
+            android:name=".activity.CreateEventActivity"
+            android:label="@string/title_activity_create_event" >
+        </activity>
+        <activity
+            android:name=".activity.EvaluacionPatientActivity"
+            android:label="@string/title_activity_evaluacion_patient" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.artica.telesalud.tph.android.activity.EventActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CreatePatientActivity"
+            android:label="@string/title_activity_create_patient"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".activity.EvaluacionFragmentActivity"
+            android:label="@string/title_activity_evaluacion_fragment" >
+        </activity>
+        <activity
+            android:name=".activity.DragTestActivity"
+            android:label="@string/title_activity_drag_test" >
+        </activity>
+
+        <receiver android:name=".view.ButtonTriage" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".activity.CreatePatientTriageActivity"
+            android:label="@string/title_activity_create_patient_triage"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.artica.telesalud.tph.android.activity.EventActivity" />
+        </activity>
+
+        <service
+            android:name=".intentservice.EventsIntentService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".intentservice.PatientsIntentService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".intentservice.SynchronizeIntentService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".fragment.EvaluacionEFragment$IntentServiceStorage"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".activity.CreatePatientViewPagerActivity"
+            android:label="@string/title_activity_create_patient_view_pager" >
+        </activity>
+        <activity
+            android:name=".activity.SampleActivity"
+            android:label="@string/title_activity_sample" >
+        </activity>
+    </application>
+
+</manifest>

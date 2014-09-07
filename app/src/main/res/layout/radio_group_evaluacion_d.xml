@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableRow>
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/radio_group_respuesta_ocular"
+        android:id="@+id/includeRespuestaOcular"
+        android:layout_marginRight="10dp"/>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_respuesta_verbal"
+            android:id="@+id/includeRespuestaVerbal"
+            android:layout_marginRight="10dp"/>
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_glasgow"
+            android:id="@+id/includeGlasgow"
+            android:layout_marginRight="10dp" />
+    </TableRow>
+    <TableRow>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_evaluacion_d_pupilas"
+            android:id="@+id/includePupilas"
+            android:layout_marginRight="10dp" />
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_respuesta_motora"
+            android:id="@+id/includeRespuestaMotora"
+            android:layout_marginRight="10dp" />
+    </TableRow>
+</TableLayout>
+
+</HorizontalScrollView>

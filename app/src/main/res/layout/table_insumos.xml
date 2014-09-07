@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableSignosVitales">
+        <TableRow
+            android:background="@color/signos_vitales_table_header_background">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/signos_vitales_table_header_text_color"
+                android:layout_column="1"
+                android:id="@+id/textViewFechaInsumoTableHeader"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/signos_vitales_text_size"
+                android:background="@drawable/cell_shape"
+                android:text="@string/text_view_fecha_insumo_header_text"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/signos_vitales_table_header_text_color"
+                android:layout_column="1"
+                android:id="@+id/textViewDescripcionTableHeader"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/signos_vitales_text_size"
+                android:background="@drawable/cell_shape"
+                android:text="@string/text_view_descripcion_insumo_header_text"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:textColor="@color/signos_vitales_table_header_text_color"
+                android:id="@+id/textViewViaAdministracionInsumoTableHeader"
+                android:textSize="@dimen/signos_vitales_text_size"
+                android:background="@drawable/cell_shape"
+                android:text="@string/text_view_via_administracion_insumo_header_text"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_column="3"
+                android:id="@+id/textViewVolumenInsumoTableHeader"
+                android:textSize="@dimen/signos_vitales_text_size"
+                android:background="@drawable/cell_shape"
+                android:textColor="@color/signos_vitales_table_header_text_color"
+                android:text="@string/text_view_volumen_insumo_header_text"/>
+
+        </TableRow>
+    </TableLayout>
+</ScrollView>

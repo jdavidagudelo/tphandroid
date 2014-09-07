@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uri_rest_server_host">interoperabilidad.udea.edu.co</string>
+    <string name="uri_base_rest_services">http://interoperabilidad.udea.edu.co:8080/TPH.Spring</string>
+    <string name="uri_get_events">/EventoController/getEventos/{userId}</string>
+    <string name="uri_get_event_causes">/ConceptController/obtenerCausasAtencion</string>
+    <string name="uri_save_event">/EventoController/saveEvento/{userId}</string>
+    <string name="uri_get_states">/LocationController/getStates</string>
+    <string name="uri_get_cities_by_state">/LocationController/getCitiesByState/{stateId}</string>
+    <string name="uri_get_all_cities">/LocationController/getAllCities</string>
+    <string name="uri_get_lesionados_evento">/LesionadoController/getLesionadosEvento/{eventoId}/{userId}</string>
+    <string name="uri_create_lesionado">/LesionadoController/createLesionadoWithLocalId/{eventoId}/{userId}/{eventLocalIdentifier}</string>
+    <string name="uri_create_evaluacion">/ObsController/createEvaluacion/{encounterId}/{userId}</string>
+    <string name="uri_get_state_by_name">/LocationController/getStateByName/{stateName}/{countryName}</string>
+    <string name="uri_get_city_by_name">/LocationController/getCityByName/{cityName}/{stateName}/{countryName}</string>
+    <string name="uri_login">/LoginController/login/{username}/{password}</string>
+    <string name="uri_save_evaluacion_patient">/ObsController/saveEvaluacionHistorico/{userId}/{obsParentId}</string>
+    <string name="uri_get_evaluaciones">/ObsController/getEvaluaciones/{encounterId}</string>
+    <string name="uri_get_patient_identifier_types">/PatientController/getPatientIdentifierTypes</string>
+    <string name="uri_get_antecedentes_amp">/MessageController/getAntecedentesAmp/{lesionadoId}</string>
+    <string name="uri_get_estados_civiles">/ConceptController/getEstadosCiviles</string>
+    <string name="uri_get_aseguradoras">/ConceptController/getAseguradoras</string>
+    <string name="uri_get_epss">/ConceptController/getEpss</string>
+    <string name="uri_get_planes_beneficios">/ConceptController/getPlanesBeneficios</string>
+    <string name="uri_get_tipos_antecedentes">/ConceptController/getTiposAntecedentes</string>
+    <string-array name="uri_get_antecedentes_amp_params">
+        <item>
+            lesionadoId
+        </item>
+    </string-array>
+    <string-array name="uri_get_evaluaciones_params">
+        <item>encounterId</item>
+    </string-array>
+    <string-array name="uri_create_evaluacion_params">
+        <item>encounterId</item>
+        <item>userId</item>
+    </string-array>
+    <string-array name="uri_create_lesionado_params">
+        <item>eventoId</item>
+        <item>userId</item>
+        <item>eventLocalIdentifier</item>
+    </string-array>
+    <string-array name="uri_save_event_params">
+        <item>userId</item>
+    </string-array>
+    <string-array name="uri_get_cities_by_state_params"><item>stateId</item></string-array>
+    <string-array name="uri_get_events_params"><item>userId</item></string-array>
+    <string-array name="uri_get_lesionados_evento_params">
+        <item>eventoId</item>
+        <item>userId</item>
+    </string-array>
+    <string-array name="uri_save_evaluacion_patient_params">
+        <item>userId</item>
+        <item>obsParentId</item>
+    </string-array>
+    <string-array name="uri_login_params">
+        <item>username</item>
+        <item>password</item>
+    </string-array>
+</resources>

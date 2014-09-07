@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="horizontal|vertical">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal|vertical" >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <EditText
+                android:inputType="number"
+                android:text="1"
+                android:background="@drawable/borders_edit_textbox"
+                android:id="@+id/editTextPatientsQuantity"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lblPacientes"
+                android:id="@+id/textViewTriage"
+                android:layout_span="1" />
+            <TextView
+                android:id="@+id/textViewCodigoAsignado"
+                android:text="@string/codigo_asignado_text"
+                />
+            <EditText
+                android:inputType="number"
+                android:background="@drawable/borders_edit_textbox"
+                android:id="@+id/editTextNumeroCaso"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/textViewCausaAtencion"
+                android:text="@string/causa_atencion_text"
+                android:layout_span="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <GridView
+                android:layout_width="560dp"
+                android:layout_height="320dp"
+                android:choiceMode="singleChoice"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/gridViewEventCause"
+                android:numColumns="3"
+                android:padding="10dip"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:layout_span="4" />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioButton
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/rbOtraCausa"
+                android:id="@+id/radioButtonOtraCausa"
+                android:layout_column="0"
+                android:layout_span="1"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/radio_button_height"
+                android:id="@+id/editTextOtraCausa"
+                android:background="@drawable/borders_edit_textbox"
+                android:layout_column="1"
+                android:layout_span="3" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lblZona"
+                android:id="@+id/textView3"
+                android:textSize="16dp"
+                android:textColor="#ff000000"
+                android:layout_span="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/lblFechaHora"
+                android:id="@+id/textView6"
+                android:textSize="16dp"
+                android:textColor="#ff000000"
+                android:layout_column="2" />
+
+        </TableRow>
+
+
+
+
+
+        <TableRow>
+            <RadioButton
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/radio_zone_urban_radio_button"
+                android:id="@+id/radioButtonZonaUrbana"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin" />
+
+            <RadioButton
+                android:layout_width="@dimen/radio_button_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/radio_zone_rural_radio_button"
+                android:id="@+id/radioButtonZonaRural"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textViewFechaEvento"
+                android:layout_gravity="left|top"
+                android:textSize="16dp"
+                android:layout_span="1"
+                android:layout_column="2" />
+            <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonFechaEvento"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="50dp"
+            android:layout_span="1"
+                android:src="@drawable/lesionado_edit_image"
+                android:layout_column="3"
+                android:contentDescription="@string/fecha_evento_description" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout></HorizontalScrollView></ScrollView>

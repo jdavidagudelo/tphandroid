@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/tableLayoutLesiones">
+        <TableRow>
+            <include
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                layout="@layout/tabs_lesiones"
+                android:id="@+id/includeTab" />
+        </TableRow>
+        <TableRow><!--
+            <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pagerLesiones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/table_lesiones"
+                android:id="@+id/includeTableLesiones"/>
+        </TableRow>
+        </TableLayout>

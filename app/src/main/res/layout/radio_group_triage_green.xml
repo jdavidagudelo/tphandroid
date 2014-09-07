@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/triage_item_background">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/tableLayoutTrauma">
+        <TableRow>
+
+            <CheckBox
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonTriageGreen"
+                android:background="@drawable/button_triage_green_fast"
+                android:button="@null"
+                android:checked="false"
+                android:layout_span="3" />
+        </TableRow>
+        <TableRow>
+
+            <CheckBox
+                android:layout_width="@dimen/triage_checkbox_width"
+                android:layout_height="@dimen/triage_checkbox_height"
+                android:textSize="@dimen/triage_check_box_text_size"
+                android:text="@string/lesion_medular_lumbar_text"
+                android:id="@+id/radioButtonLesionMedularLumbar"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+            <CheckBox
+                android:layout_width="@dimen/triage_checkbox_width"
+                android:layout_height="@dimen/triage_checkbox_height"
+                android:textSize="@dimen/triage_check_box_text_size"
+                android:text="@string/glasgow1415_text"
+                android:id="@+id/radioButtonGlasgow1415"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+            <CheckBox
+                android:layout_width="@dimen/triage_checkbox_width"
+                android:layout_height="@dimen/triage_checkbox_height"
+                android:text="@string/fracturas_no_proximales_text"
+                android:id="@+id/radioButtonFracturasNoProximales"
+                android:textSize="@dimen/triage_check_box_text_size"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        </TableRow>
+        <TableRow>
+
+            <CheckBox
+                android:layout_width="@dimen/triage_checkbox_width"
+                android:layout_height="@dimen/triage_checkbox_height"
+                android:text="@string/lesiones_superficiales_text"
+                android:textSize="@dimen/triage_check_box_text_size"
+                android:id="@+id/radioButtonLesionesSuperficiales"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+            <CheckBox
+                android:layout_width="@dimen/triage_checkbox_width"
+                android:layout_height="@dimen/triage_checkbox_height"
+                android:text="@string/quemaduras_grado_i_text"
+                android:textSize="@dimen/triage_check_box_text_size"
+                android:id="@+id/radioButtonQuemadurasGradoI"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+            <CheckBox
+                android:layout_width="@dimen/triage_checkbox_width"
+                android:layout_height="@dimen/triage_checkbox_height"
+                android:textSize="@dimen/triage_check_box_text_size"
+                android:text="@string/afectados_text"
+                android:id="@+id/radioButtonAfectados"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

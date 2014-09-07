@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableRow>
+
+        <TextView
+            android:text="@string/insumo_title_text"
+            android:layout_span="3" />
+    </TableRow>
+    <TableRow>
+        <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/edit_text_signos_vitales_width"
+            android:id="@+id/spinnerInsumo"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="3">
+
+        </Spinner>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:text="@string/via_administracion_title_text"/>
+    </TableRow>
+    <TableRow>
+        <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/edit_text_signos_vitales_width"
+            android:id="@+id/spinnerViaAdministracion"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="3">
+
+        </Spinner>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:text="@string/volumen_title_text"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:text="@string/cantidad_title_text"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/edit_text_signos_vitales_width"
+            android:id="@+id/editTextVolumen"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            />
+</TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/unidades_title_text"/>
+
+        <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/edit_text_signos_vitales_width"
+            android:id="@+id/spinnerUnidades"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:text="@string/tiempo_posologia_title_text"/>
+    </TableRow>
+    <TableRow>
+
+
+            <TextView
+                android:text="@string/horas_posologia_title_text"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/edit_text_signos_vitales_width"
+            android:id="@+id/editTextHoras"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="2" />
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:text="@string/minutos_posologia_title_text"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/edit_text_signos_vitales_width"
+            android:id="@+id/editTextMinutos"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:text="@string/segundos_posologia_title_text"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/edit_text_signos_vitales_width"
+            android:id="@+id/editTextSegundos"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+        <CheckBox
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/suministro_instantaneo_text"
+            android:id="@+id/radioButtonTiempoInstantaneo"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+
+
+        <TextView
+            android:text="@string/fecha_posologia_title_text"
+            android:gravity="center_vertical"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonFechaPosologia"
+            android:layout_gravity="right|center_vertical"
+            android:layout_span="1"
+            android:src="@drawable/lesionado_edit_image"
+            android:contentDescription="@string/fecha_evento_description" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/buttonAddInsumo"
+            android:text="@string/button_add_insumo_text"
+            android:layout_column="0"
+            android:layout_span="3"/>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:id="@+id/relativeLayout"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_documento_identidad_1"
+            android:id="@+id/includeIdentificacionPaciente"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_genero"
+            android:id="@+id/includeGenero"
+            android:layout_alignTop="@+id/includeNombre"
+            android:layout_toRightOf="@+id/includeNombre" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_nombre"
+            android:id="@+id/includeNombre"
+            android:layout_below="@+id/includeIdentificacionPaciente"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_fecha_nacimiento"
+            android:id="@+id/includeFechaNacimiento"
+            android:layout_below="@+id/includeNombre"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_estado_civil_1"
+            android:id="@+id/includeEstadoCivil"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/includeIdentificacionPaciente"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/includeGenero" />
+        </RelativeLayout>
+
+    </HorizontalScrollView>

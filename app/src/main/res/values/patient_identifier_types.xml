@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="patient_identifier_id_cc">1</string>
+    <string name="patient_identifier_id_ti">2</string>
+    <string name="patient_identifier_id_nuip">3</string>
+    <string name="patient_identifier_id_rc">4</string>
+    <string name="patient_identifier_id_passport">5</string>
+    <string name="patient_identifier_id_none">6</string>
+    <string name="patient_identifier_id_ce">9</string>
+    <string name="patient_identifier_id_child_no_id">10</string>
+</resources>

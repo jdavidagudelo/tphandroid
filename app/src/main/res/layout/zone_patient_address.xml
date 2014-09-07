@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableRow>
+        <TextView
+            android:text="@string/address_zone_patient_title_text"
+            android:layout_span="3"/>
+    </TableRow>
+    <TableRow>
+
+        <RadioButton
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/radio_zone_rural_radio_button"
+            android:id="@+id/radioButtonAddressZoneRural"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        <RadioButton
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/radio_zone_urban_radio_button"
+            android:id="@+id/radioButtonAddressZoneUrbana"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        </TableRow>
+    </TableLayout>

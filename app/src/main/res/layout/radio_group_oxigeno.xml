@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableRow>
+
+        <TextView
+            android:text="@string/equipo_title_text"
+            android:layout_span="3" />
+    </TableRow>
+    <TableRow>
+        <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/edit_text_signos_vitales_width"
+            android:id="@+id/spinnerEquipo"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="3">
+
+        </Spinner>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:text="@string/dosificacion_title_text"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/edit_text_signos_vitales_width"
+            android:id="@+id/editTextVolumen"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            />
+    </TableRow>
+
+
+    <TableRow>
+
+
+        <TextView
+            android:text="@string/fecha_posologia_title_text"
+            android:gravity="center_vertical"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonFechaPosologia"
+            android:layout_gravity="right|center_vertical"
+            android:layout_span="1"
+            android:src="@drawable/lesionado_edit_image"
+            android:contentDescription="@string/fecha_evento_description" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/buttonAddOxigeno"
+            android:text="@string/button_add_oxigeno_text"
+            android:layout_column="0"
+            android:layout_span="3"/>
+    </TableRow>
+</TableLayout>

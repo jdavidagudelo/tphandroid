@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableRow>
+
+        <TextView
+            android:text="@string/address_patient_title_text"
+            android:layout_span="10" />
+    </TableRow>
+    <TableRow>
+        <Spinner
+            android:id="@+id/spinnerMainWayPatient"
+            android:layout_width="@dimen/address_item_width"
+            />
+        <EditText
+            android:layout_width="@dimen/address_item_width"
+            android:id="@+id/editTextMainWayIdPatient"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        <Spinner
+            android:id="@+id/spinnerMainWaySecondaryIdPatient"
+            android:layout_width="@dimen/address_item_width"
+            />
+        <Spinner
+            android:id="@+id/spinnerMainWayDirectionPatient"
+            android:layout_width="@dimen/address_item_width"
+            />
+        <TextView
+            android:text="@string/address_number_text"/>
+        <EditText
+            android:layout_width="@dimen/address_item_width"
+            android:id="@+id/editTextSecondaryWayIdPatient"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        <Spinner
+            android:id="@+id/spinnerSecondaryWaySecondaryIdPatient"
+            android:layout_width="@dimen/address_item_width"
+            />
+        <Spinner
+            android:id="@+id/spinnerSecondaryWayDirectionPatient"
+            android:layout_width="@dimen/address_item_width"
+            />
+        <TextView
+            android:text="@string/additional_number_address_text"/>
+        <EditText
+            android:layout_width="@dimen/address_item_width"
+            android:id="@+id/editTextSecondaryWayAdditionalIdPatient"
+
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+    </TableRow>
+    <TableRow>
+
+        <Spinner
+            android:id="@+id/spinnerBlockAddressPatient"
+            android:layout_width="@dimen/address_item_width"
+            />
+        <EditText
+            android:layout_width="@dimen/address_item_width"
+            android:id="@+id/editTextBlockAddressIdPatient"
+
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+        <Spinner
+            android:id="@+id/spinnerRoomAddressPatient"
+            android:layout_width="@dimen/address_item_width"
+            />
+        <EditText
+            android:layout_width="@dimen/address_item_width"
+            android:id="@+id/editTextRoomAddressIdPatient"
+            android:inputType="number"
+            android:background="@drawable/borders_edit_textbox"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_other_address_text"
+            android:layout_span="10"/>
+    </TableRow>
+    <TableRow>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="10"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EvaluacionEFragment">
+    <LinearLayout
+        android:id="@+id/evaluationPatient1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/evaluationPatient"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="0dp"
+            android:weightSum="1"
+            android:id="@+id/linearLayout4"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="153dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <com.artica.telesalud.tph.android.view.TouchImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewBody"
+                android:src="@drawable/body"
+                android:layout_alignTop="@+id/include2"
+                android:layout_toRightOf="@+id/include2"
+                android:layout_toLeftOf="@+id/includeLesiones"
+                android:layout_alignParentBottom="true" />
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/button_evaluacion"
+                android:id="@+id/include2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_lesiones"
+                android:id="@+id/includeLesiones"
+                android:layout_alignBottom="@+id/imageViewBody"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/imageViewBody" />
+
+
+
+
+        </RelativeLayout>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="641dp"
+            layout="@layout/evolucion_widget"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/include3" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+</FrameLayout>

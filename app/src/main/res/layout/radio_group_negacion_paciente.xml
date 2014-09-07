@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow>
+        <TextView
+            android:text="@string/negacion_paciente_title_text"
+            android:layout_span="3" />
+    </TableRow>
+    <TableRow>
+
+        <RadioButton
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/negacion_remision_text"
+            android:id="@+id/radioButtonNegacionRemision"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+        <RadioButton
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/negacion_atencion_text"
+            android:id="@+id/radioButtonNegacionAtencion"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_height="200dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/editTextRecomendacionesTeleasistencia"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="2" />
+    </TableRow>
+    </TableLayout>

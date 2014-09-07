@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProcedimientosFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/relativeLayout"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="0dp"
+            android:weightSum="1"
+            android:id="@+id/linearLayout4"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="153dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/button_evaluacion"
+                android:id="@+id/include2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/procedimientos"
+                android:id="@+id/include3"
+                android:layout_alignTop="@+id/include2"
+                android:layout_alignLeft="@+id/include2"
+                android:layout_alignStart="@+id/include2"
+                android:layout_marginLeft="178dp" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="641dp"
+            layout="@layout/evolucion_widget"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/include3" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

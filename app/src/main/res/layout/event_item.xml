@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#ff5fc0ff">
+
+        <TextView
+            android:id="@+id/textViewCaseNumberEventList"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textSize="20px"
+            android:text="@string/event_number_label_text"
+            android:textAlignment="viewEnd"
+            android:gravity="center_vertical|center_horizontal|bottom"
+            android:textColor="#fff9fdff" />
+
+        <TextView
+            android:id="@+id/textViewDateEventList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12px"
+            android:textAlignment="center"
+            android:text="@string/event_date_label_text"
+            android:gravity="center_vertical|center_horizontal|bottom"
+            android:textColor="#fffcfffd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+
+        android:background="@drawable/list_lesionados_item"
+        >
+
+        <TextView
+            android:id="@+id/textViewCauseEventList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14px"
+            android:text="@string/event_cause_label_text" />
+
+        <TextView
+            android:id="@+id/textViewAddressEventList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12px"
+            android:text="@string/event_address_label_text" />
+
+        <TextView
+            android:id="@+id/textViewCityEventList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12px"
+            android:text="@string/event_city_label_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lesionado_edit_image"
+            android:layout_gravity="right"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

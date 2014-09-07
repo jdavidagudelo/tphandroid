@@ -1,0 +1,55 @@
+
+<GridLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#00ffffff">
+
+    <RelativeLayout
+        android:layout_width="620dp"
+        android:layout_height="fill_parent"
+        android:layout_row="0"
+        android:layout_column="0">
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/includeInformacionEvento"
+            layout="@layout/radio_group_causa_evento"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"></include>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:id="@+id/layoutMap">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refrescar"
+            android:id="@+id/buttonRefreshGps"
+            android:layout_above="@+id/map" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lbl_marcador_mapa"
+            android:id="@+id/textView4"
+            android:background="#ff50c7ff"
+            android:textColor="#fffdfbff"
+            android:textIsSelectable="true"
+            android:layout_alignParentTop="true"
+            android:gravity="bottom|right"
+            android:layout_toRightOf="@+id/buttonRefreshGps" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView4" />
+
+    </RelativeLayout>
+</GridLayout>

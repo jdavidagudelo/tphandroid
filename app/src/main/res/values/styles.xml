@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="button_tab_lesiones_normal" parent="android:Theme.Holo.Light.DarkActionBar">
+
+        <item name="android:background">#C5C3C7</item>
+    </style>
+    <style name="button_tab_lesiones_selected" parent="android:Theme.Holo.Light.DarkActionBar">
+
+        <item name="android:background">#E5E1E8</item>
+    </style>
+</resources>

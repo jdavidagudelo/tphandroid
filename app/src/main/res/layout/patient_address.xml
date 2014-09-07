@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="0dp"
+    android:id="@+id/relativeLayout"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/zone_patient_address"
+            android:id="@+id/includePatientZone"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_ciudad"
+            android:id="@+id/includePatientCity"/>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/address_patient"
+            android:id="@+id/includePatientAddress"
+            android:layout_marginTop="55dp"
+            android:layout_below="@+id/includePatientCity"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_telephone_patient"
+            android:id="@+id/includePatientTelephone"
+            android:layout_below="@+id/includePatientAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </HorizontalScrollView>

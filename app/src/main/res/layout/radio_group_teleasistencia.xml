@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TableRow>
+        <TextView
+            android:text="@string/medio_teleasistencia_title_text"/>
+    </TableRow>
+        <TableRow>
+
+            <RadioButton
+                android:layout_width="@dimen/triage_checkbox_width"
+                android:layout_height="@dimen/triage_checkbox_height"
+                android:textSize="@dimen/antecedentes_radiobutton_text_size"
+                android:text="@string/teleasistencia_medio_telefono_text"
+                android:id="@+id/radioButtonAddressZoneRural"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+            <RadioButton
+                android:layout_width="@dimen/triage_checkbox_width"
+                android:layout_height="@dimen/triage_checkbox_height"
+                android:textSize="@dimen/antecedentes_radiobutton_text_size"
+                android:text="@string/teleasistencia_medio_web_text"
+                android:id="@+id/radioButtonAddressZoneUrbana"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/motivo_teleasistencia_title_text"/>
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/editTextMotivoTeleasistencia"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/medico_teleasistencia_title_text"/>
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/editTextMedicoTeleasistencia"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/recomendaciones_teleasistencia_title_text"/>
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_height="200dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/editTextRecomendacionesTeleasistencia"
+            android:background="@drawable/borders_edit_textbox"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/buttonAddTeleasistencia"
+            android:text="@string/button_add_teleasistencia_text"
+            android:layout_column="0"
+            android:layout_span="2"/>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="horizontal|vertical"
+    android:background="@color/hc_background" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="horizontal|vertical"
+        android:layout_marginBottom="100dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/hc_background">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/text_view_patient_id"
+        android:id="@+id/includeTextViewPatient"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/radio_group_triage_red"
+        android:id="@+id/includeTriageRed"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"/>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/radio_group_triage_yellow"
+        android:id="@+id/includeTriageYellow"
+        android:layout_marginLeft="13dp"
+        android:layout_alignTop="@+id/includeTriageRed"
+        android:layout_toRightOf="@+id/includeTriageRed"
+        android:layout_above="@+id/includeTextViewOtroTriage" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/radio_group_triage_black"
+        android:id="@+id/includeTriageGreen"
+        android:layout_marginLeft="13dp"
+        android:layout_alignTop="@+id/includeTriageYellow"
+        android:layout_toRightOf="@+id/includeTriageYellow"
+        android:layout_above="@+id/includeTextViewOtroTriage" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/radio_group_triage_green"
+        android:id="@+id/includeTriageBlack"
+        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@+id/includeTriageGreen"
+        android:layout_toRightOf="@+id/includeTriageGreen"
+        android:layout_above="@+id/includeTextViewOtroTriage" />
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/radio_group_triage_white"
+        android:id="@+id/includeTriageWhite"
+        android:layout_marginLeft="13dp"
+        android:layout_alignTop="@+id/includeTriageBlack"
+        android:layout_toRightOf="@+id/includeTriageBlack"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+            <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/create_patient_otro_triage"
+        android:id="@+id/includeTextViewOtroTriage"
+        android:layout_below="@+id/includeTriageRed"
+        android:layout_alignLeft="@+id/includeTriageYellow"
+        android:layout_alignStart="@+id/includeTriageYellow"
+        android:layout_toLeftOf="@+id/includeTriageWhite" />
+
+
+        </RelativeLayout>
+</HorizontalScrollView></ScrollView>

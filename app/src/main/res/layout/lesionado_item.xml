@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#fb36d36a"
+        android:weightSum="1"
+        android:id="@+id/linearLayoutTriage"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewConsecutivoLesionadoList"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textSize="20px"
+            android:textAlignment="viewEnd"
+            android:gravity="center_vertical|center_horizontal|bottom"
+            android:textColor="#fff9fdff"
+            android:layout_weight="0.55" />
+
+        <TextView
+            android:id="@+id/textViewGenderLesionadotList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12px"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal|bottom"
+            android:textColor="#fffcfffd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+
+        android:background="@drawable/list_lesionados_item"
+        android:id="@+id/layout_lesionado">
+
+        <TextView
+            android:id="@+id/textViewTriageLesionadoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12px"
+            android:text="@string/lesionado_name_text"
+            android:layout_marginTop="0dp"
+            android:textColor="#ff000000" />
+
+
+
+        <TextView
+            android:id="@+id/textViewNameLesionadoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12px"
+            android:text="@string/lesionado_name_text"
+            android:layout_marginTop="0dp"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/textViewIdentificacionLesionadoList" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

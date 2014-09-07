@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:background="@drawable/borders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/tableLayoutEmergencias">
+        <TableRow>
+
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/cardiovascular_text"
+                android:id="@+id/radioButtonCardiovascular"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/enfermedad_comun_text"
+                android:id="@+id/radioButtonEnfermedadComun"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin" />
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/gastrointestinal_text"
+                android:id="@+id/radioButtonGastroIntestinal"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin" />
+
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/genitourinario_text"
+                android:id="@+id/radioButtonGenitourinario"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/gicobstetricotext"
+                android:id="@+id/radioButtonGinecoObstetrico"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/intoxicacion_text"
+                android:id="@+id/radioButtonIntoxicacion"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin" />
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/neurologica_text"
+                android:id="@+id/radioButtonNeurologica"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin" />
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/organos_sentidos_text"
+                android:id="@+id/radioButtonOrganosSentidos"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin" />
+
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/ovace_text"
+                android:id="@+id/radioButtonOvace"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/parocardiaco_text"
+                android:id="@+id/radioButtonParoCardiaco"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/psiquiatrica_text"
+                android:id="@+id/radioButtonPsiquiatrica"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin" />
+
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/shock_text"
+                android:id="@+id/radioButtonShock"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin" />
+            <RadioButton
+                android:layout_width="@dimen/radio_button_emergencia_width"
+                android:layout_height="@dimen/radio_button_height"
+                android:text="@string/termicaText"
+                android:id="@+id/radioButtonTermica"
+                android:background="@drawable/checkbox_triage"
+                android:checked="false"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+            </TableRow>
+
+
+
+
+
+
+
+   </TableLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="0dp"
+    android:id="@+id/relativeLayout"
+    >
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_resultado"
+                android:id="@+id/includeResultado"
+                android:layout_gravity="left|top" />
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_negacion_paciente"
+                android:id="@+id/includeNegacion"
+                android:layout_gravity="left|top" />
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_primer_respondiente"
+                android:id="@+id/includePrimerRespondiente"
+                android:layout_gravity="left|top" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="@string/observaciones_text"
+                android:layout_span="3"/>
+        </TableRow>
+        <TableRow>
+
+            <EditText
+                android:layout_height="150dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/editTextRecomendacionesTeleasistencia"
+                android:background="@drawable/borders_edit_textbox"
+                android:inputType="text"
+                android:layout_marginLeft="@dimen/checkbox_triage_margin"
+                android:layout_marginRight="@dimen/checkbox_triage_margin"
+                android:layout_marginTop="@dimen/checkbox_triage_margin"
+                android:layout_marginBottom="@dimen/checkbox_triage_margin"
+                android:layout_span="3" />
+        </TableRow>
+        </TableLayout>
+</HorizontalScrollView>

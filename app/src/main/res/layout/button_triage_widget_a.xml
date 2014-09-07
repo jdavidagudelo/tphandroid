@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/widget_margin" >
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonTriageRed"
+        android:button="@drawable/button_triage_red"
+        android:layout_below="@+id/textViewTriage"
+        android:layout_alignRight="@+id/textViewTriage"
+        android:layout_alignEnd="@+id/textViewTriage"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonTriageYellowA"
+        android:button="@drawable/button_triage_yellow"
+
+        android:layout_below="@+id/imageButtonTriageRed"
+        android:layout_alignLeft="@+id/imageButtonTriageRed"
+        android:layout_alignStart="@+id/imageButtonTriageRed"
+        android:layout_alignRight="@+id/imageButtonTriageRed"
+        android:layout_alignEnd="@+id/imageButtonTriageRed"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonTriageGreenA"
+        android:button="@drawable/button_triage_green"
+        android:layout_below="@+id/imageButtonTriageYellowA"
+        android:layout_alignLeft="@+id/imageButtonTriageYellowA"
+        android:layout_alignStart="@+id/imageButtonTriageYellowA"
+        android:layout_alignRight="@+id/imageButtonTriageYellowA"
+        android:layout_alignEnd="@+id/imageButtonTriageYellowA"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonTriageWhiteA"
+        android:button="@drawable/button_triage_white"
+        android:layout_below="@+id/imageButtonTriageGreenA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imageButtonTriageGreenA"
+        android:layout_alignEnd="@+id/imageButtonTriageGreenA"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/button_triage_black"
+        android:id="@+id/imageButtonTriageBlackA"
+        android:layout_below="@+id/imageButtonTriageWhiteA"
+        android:layout_alignRight="@+id/imageButtonTriageGreenA"
+        android:layout_alignEnd="@+id/imageButtonTriageGreenA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRIAGE"
+        android:id="@+id/textViewTriage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tableLayout">
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/pupilas_title_text"
+            android:layout_marginBottom="20dp"/>
+    </TableRow>
+    <TableRow>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_evaluacion_d_pupilas_size"
+            android:id="@+id/includePupilasSize"/>
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_evaluacion_d_pupilas_reactivas"
+            android:id="@+id/includePupilasReactivas"/>
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/radio_group_evaluacion_d_pupilas_simetria"
+            android:id="@+id/includePupilasSimetria"/>
+    </TableRow>
+</TableLayout>

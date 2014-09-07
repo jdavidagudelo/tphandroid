@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow>
+        <TextView
+            android:text="@string/primer_respondiente_title_text"
+            android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+
+        <CheckBox
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/ciudadanos_text"
+            android:id="@+id/checkBoxCiudadanos"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+        <CheckBox
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/socorristas_text"
+            android:id="@+id/checkBoxSocorristas"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+        </TableRow>
+    <TableRow>
+
+        <CheckBox
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/medicos_text"
+            android:id="@+id/checkBoxMedicos"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+        <CheckBox
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/policia_text"
+            android:id="@+id/checkBoxPolicia"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+    </TableRow>
+    <TableRow>
+
+        <CheckBox
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/bomberos_text"
+            android:id="@+id/checkBoxBomberos"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+
+        <CheckBox
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/transito_text"
+            android:id="@+id/checkBoxTransito"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+    </TableRow>
+    <TableRow>
+
+        <CheckBox
+            android:layout_width="@dimen/triage_checkbox_width"
+            android:layout_height="@dimen/triage_checkbox_height"
+            android:textSize="@dimen/antecedentes_radiobutton_text_size"
+            android:text="@string/familiares_text"
+            android:id="@+id/checkBoxFamiliares"
+            android:background="@drawable/checkbox_triage"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/checkbox_triage_margin"
+            android:layout_marginRight="@dimen/checkbox_triage_margin"
+            android:layout_marginTop="@dimen/checkbox_triage_margin"
+            android:layout_marginBottom="@dimen/checkbox_triage_margin"/>
+    </TableRow>
+    </TableLayout>

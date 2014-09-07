@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+    <TableRow>
+        <TextView
+        android:layout_width="1020dp"
+        android:layout_height="wrap_content"
+        android:text="@string/triage_text"
+        android:id="@+id/textViewTriage"
+        android:textAlignment="center"
+            android:textSize="70sp"
+            android:gravity="center_vertical" />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/patient_id_text"
+    android:id="@+id/textViewPatient"
+        android:layout_marginRight="30dp"
+        android:textSize="20dp"/>
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1/4"
+    android:id="@+id/textViewId"
+        android:textSize="@dimen/text_view_id_patient_text_size"
+        android:layout_marginRight="32dp"
+       />
+</TableRow>
+</TableLayout>
+</RelativeLayout>

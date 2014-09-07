@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/radio_group_procedimientos_soporte_vital_basico"
+        android:id="@+id/include2" />
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/radio_group_procedimientos_soporte_vital_avanzado"
+        android:id="@+id/include3"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/include2" />
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/radio_group_procedimientos_otros"
+        android:id="@+id/include4"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/include3"
+        android:layout_alignBottom="@+id/include3" />
+    <EditText
+        android:layout_width="620dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextOtrosProcedimientos"
+        android:background="@drawable/borders_edit_textbox"
+        android:layout_below="@+id/textView"
+        android:inputType="textMultiLine"
+        android:layout_toRightOf="@+id/include2"
+        android:layout_alignBottom="@+id/include2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/text_view_otro_procedimiento_text"
+
+        android:id="@+id/textView"
+        android:layout_below="@+id/include3"
+        android:layout_toRightOf="@+id/include2" />
+    </RelativeLayout></HorizontalScrollView>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+    android:background="#09C" >
+<include layout="@layout/lesionado_item"
+    android:id="@+id/include2"></include>
+
+    <include
+        layout="@layout/lesionado_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/include"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/include2" />
+
+    <include
+        layout="@layout/lesionado_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/include3"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/include" />
+
+    <include
+        layout="@layout/lesionado_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/include4"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/include3" />
+
+</RelativeLayout>

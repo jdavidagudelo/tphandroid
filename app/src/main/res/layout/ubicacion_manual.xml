@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#00ffffff">
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="fill_parent"
+        android:layout_row="4"
+        android:layout_column="0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_view_state_text"
+            android:id="@+id/textViewState"
+            android:layout_marginTop="52dp"
+            android:layout_marginLeft="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_view_city_text"
+            android:id="@+id/textViewCity"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/textViewState"
+            android:layout_alignLeft="@+id/textViewState"
+            android:layout_alignStart="@+id/textViewState" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerState"
+            android:layout_marginLeft="84dp"
+            android:layout_above="@+id/textViewCity"
+            android:layout_toRightOf="@+id/textViewState" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerCity"
+            android:layout_alignTop="@+id/textViewCity"
+            android:layout_alignLeft="@+id/spinnerState"
+            android:layout_alignStart="@+id/spinnerState" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_view_direccion_text"
+            android:id="@+id/textViewAddress"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/spinnerCity"
+            android:layout_alignLeft="@+id/textViewCity"
+            android:layout_alignStart="@+id/textViewCity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_view_other_text"
+            android:id="@+id/textViewOther"
+            android:layout_below="@+id/textViewAddress"
+            android:layout_alignLeft="@+id/textViewAddress"
+            android:layout_alignStart="@+id/textViewAddress"
+            android:layout_marginTop="197dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextOtrosProcedimientos"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/textViewOther"
+            android:layout_alignLeft="@+id/textViewOther"
+            android:layout_alignStart="@+id/textViewOther"
+            android:layout_marginTop="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_below="@+id/textViewAddress"
+            android:layout_alignLeft="@+id/textViewAddress"
+            android:layout_alignStart="@+id/textViewAddress"
+            android:layout_marginTop="21dp"
+            android:layout_alignRight="@+id/textViewState"
+            android:layout_alignEnd="@+id/textViewState" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner5"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/spinner2"
+            android:layout_alignStart="@+id/spinner2"
+            android:layout_alignRight="@+id/spinner2"
+            android:layout_alignEnd="@+id/spinner2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_above="@+id/spinner5"
+            android:layout_toRightOf="@+id/spinner2"
+            android:layout_toLeftOf="@+id/spinnerCity" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/editText3"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_alignRight="@+id/editText3"
+            android:layout_alignEnd="@+id/editText3" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner6"
+            android:layout_alignBottom="@+id/editText3"
+            android:layout_alignLeft="@+id/spinnerCity"
+            android:layout_alignStart="@+id/spinnerCity"
+            android:layout_toLeftOf="@+id/spinnerCity" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner8"
+            android:layout_alignTop="@+id/spinner6"
+            android:layout_toRightOf="@+id/spinner6"
+            android:layout_marginLeft="25dp"
+            android:layout_alignRight="@+id/spinner6"
+            android:layout_alignEnd="@+id/spinner6" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="656dp"
+        android:layout_height="fill_parent"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:id="@+id/layoutMap"
+        android:background="@drawable/ubicacion_manual">
+    </RelativeLayout>
+</GridLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:layout_alignParentLeft="true"
+android:layout_alignParentStart="true"
+android:weightSum="1"
+android:id="@+id/tableLayoutLesiones">
+<TableRow>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/abrasion_text"
+        android:id="@+id/radioButtonAbrasion"
+        android:checked="false"
+        android:background="@drawable/checkbox_triage"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/amputacion_text"
+        android:id="@+id/radioButtonAmputacion"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/aplastamiento_text"
+        android:id="@+id/radioButtonAplastamiento"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+</TableRow>
+<TableRow>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/avulsion_text"
+        android:id="@+id/radioButtonAvulsion"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/contusion_text"
+        android:id="@+id/radioButtonContusion"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/dolor_text"
+        android:id="@+id/radioButtonDolor"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+</TableRow>
+<TableRow>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/esguince_text"
+        android:id="@+id/radioButtonEsquince"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/fractura_abierta_text"
+        android:id="@+id/radioButtonFracturaAbierta"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+    android:layout_width="@dimen/radio_button_width"
+    android:layout_height="@dimen/radio_button_height"
+    android:text="@string/fractura_cerrada_text"
+    android:id="@+id/radioButtonFracturaCerrada"
+        android:background="@drawable/checkbox_triage"
+    android:checked="false"/>
+</TableRow>
+
+<TableRow>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/herida_text"
+        android:id="@+id/radioButtonHerida"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/herida_arma_fuego_text"
+        android:id="@+id/radioButtonHeridaArmaFuego"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/herida_arma_blanca_text"
+        android:id="@+id/radioButtonHeridaArmaBlanca"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+</TableRow>
+<TableRow>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/hemorragia_text"
+        android:id="@+id/radioButtonHemorragia"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/hematoma_text"
+        android:id="@+id/radioButtonHematoma"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/laceracion_text"
+        android:id="@+id/radioButtonLaceracion"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+</TableRow>
+<TableRow>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/mordida_text"
+        android:id="@+id/radioButtonMordida"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/picadura_text"
+        android:id="@+id/radioButtonPicadura"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/puncion_text"
+        android:id="@+id/radioButtonPuncion"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+</TableRow>
+<TableRow>
+
+
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/quemadura_text"
+        android:id="@+id/radioButtonQuemadura"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/trauma_cerrado_text"
+        android:id="@+id/radioButtonTraumaCerrado"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+    <CheckBox
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:text="@string/trauma_penetrante_text"
+        android:id="@+id/radioButtonTraumaPenetrante"
+        android:background="@drawable/checkbox_triage"
+        android:checked="false"/>
+</TableRow>
+    <TableRow>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonDeleteHallazgo"
+            android:layout_column="2"
+            android:text="x"/>
+
+    </TableRow>
+</TableLayout>

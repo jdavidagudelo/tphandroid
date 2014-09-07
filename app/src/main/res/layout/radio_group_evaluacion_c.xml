@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout">
+        <TableRow>
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_evaluacion_c_sangrado"
+                android:id="@+id/includeSangrado"
+                android:layout_marginRight="10dp"/>
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_evaluacion_c_fortaleza"
+                android:id="@+id/includeFortaleza"
+                android:layout_marginRight="10dp"/>
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_evaluacion_c_ubicacion"
+                android:id="@+id/includeUbicacion"
+                android:layout_marginRight="10dp"/>
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/radio_group_evaluacion_c_llenado_capilar"
+                android:id="@+id/includeUbicacion"
+                android:layout_marginRight="10dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/radio_group_evaluacion_c_piel"
+        android:id="@+id/includePiel"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

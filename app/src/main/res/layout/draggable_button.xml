@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"><!--
+    <com.artica.telesalud.tph.android.view.DraggableImageButton
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/marker_green"
+      >
+    </com.artica.telesalud.tph.android.view.DraggableImageButton>-->
+    <com.artica.telesalud.tph.android.view.DraggableImageButton
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:background="@drawable/marker_green"
+        android:textSize="70sp"
+        android:textAlignment="center"
+        android:text="1"
+        android:textColor="@color/lesion_id_color"
+        android:textStyle="bold|italic">
+    </com.artica.telesalud.tph.android.view.DraggableImageButton>
+</RelativeLayout>

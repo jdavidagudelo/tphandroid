@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_evaluacion_a_tag">evaluaciona</string>
+    <string name="fragment_evaluacion_b_tag">evaluacionb</string>
+    <string name="fragment_evaluacion_c_tag">evaluacionc</string>
+    <string name="fragment_evaluacion_d_tag">evaluaciond</string>
+    <string name="fragment_evaluacion_e_tag">evaluacione</string>
+    <string name="fragment_emergencia_medica_tag">emergencia_medica</string>
+    <string name="fragment_trauma_tag">trauma</string>
+    <string name="fragment_procedimientos_tag">procedimientos</string>
+    <string name="fragment_identification_patient_tag">identificacion</string>
+    <string name="fragment_antecedentes_patient_tag">antecedentes</string>
+    <string name="fragment_domicilio_tag">domicilio</string>
+    <string name="fragment_companion_tag">companion</string>
+    <string name="fragment_aseguramiento_tag">aseguramiento</string>
+    <string name="fragment_remision_tag">remision</string>
+    <string name="fragment_responsables_tag">responsables</string>
+    <string name="fragment_archivos_adjuntos_tag">archivos_adjuntos</string>
+    <string name="fragment_recepcion_tag">recepcion</string>
+    <string name="fragment_insumos_tag">insumos</string>
+    <string name="fragment_oxigeno_tag">oxigeno</string>
+    <string name="fragment_triage_tag">triage</string>
+</resources>
